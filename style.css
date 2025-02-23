@@ -1,0 +1,117 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card container */
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading styles */
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+h3:hover {
+    color: #4CAF50;
+}
+
+/* Input field */
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #74ebd5;
+    box-shadow: 0 0 8px rgba(116, 235, 213, 0.8);
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    width: 48%;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#checkButton {
+    background: #4CAF50;
+    color: white;
+}
+
+#checkButton:hover {
+    background: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.3);
+}
+
+#reset {
+    background: #f44336;
+    color: white;
+}
+
+#reset:hover {
+    background: #d32f2f;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Results styling */
+#resultDiv {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 6px;
+    min-height: 30px;
+}
+
+/* Center everything */
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
